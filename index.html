@@ -21,6 +21,13 @@
         .cta p { font-size: 15px; color: #444; margin-bottom: 20px; line-height: 1.7; }
         .btn { display: inline-block; background: #2563eb; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 700; }
         .btn-outline { display: inline-block; background: transparent; color: #2563eb; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; border: 2px solid #2563eb; margin-top: 12px; }
+        .screenshots { padding: 48px 0; background: #f8faff; }
+        .screenshots h2 { padding: 0 24px; max-width: 640px; margin: 0 auto 24px; }
+        .screenshot-scroll { display: flex; gap: 16px; overflow-x: auto; padding: 0 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+        .screenshot-scroll::-webkit-scrollbar { display: none; }
+        .screenshot-item { flex: 0 0 auto; scroll-snap-align: start; }
+        .screenshot-item img { width: 180px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: block; }
+        .screenshot-item p { font-size: 12px; color: #666; text-align: center; margin-top: 8px; }
         footer { text-align: center; padding: 24px; font-size: 13px; color: #888; border-top: 1px solid #eee; }
         footer a { color: #2563eb; text-decoration: none; }
     </style>
@@ -50,6 +57,28 @@
         </div>
     </div>
 </section>
+
+<div class="screenshots">
+    <h2 style="font-size: 20px; font-weight: 700; color: #1e40af;">アプリ画面</h2>
+    <div class="screenshot-scroll">
+        <div class="screenshot-item">
+            <img src="images/01_home.png" alt="ホーム画面">
+            <p>ホーム</p>
+        </div>
+        <div class="screenshot-item">
+            <img src="images/04_template.png" alt="品目テンプレート">
+            <p>品目テンプレート</p>
+        </div>
+        <div class="screenshot-item">
+            <img src="images/05_step2_items.png" alt="品目入力・合計">
+            <p>品目入力・自動計算</p>
+        </div>
+        <div class="screenshot-item">
+            <img src="images/07_pdf_done.png" alt="PDF作成完了">
+            <p>PDF出力</p>
+        </div>
+    </div>
+</div>
 
 <section>
     <div class="cta">
