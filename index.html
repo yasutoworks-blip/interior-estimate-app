@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>内装見積もりアプリ</title>
+    <title>内装見積書・請求書アプリ｜一人親方の見積作成</title>
+    <meta name="description" content="内装・リフォームの一人親方向けのAndroidアプリ。品目テンプレート90項目から選んで、スマホで見積書と請求書を作成しPDFで送れます。作成件数は無制限、インボイス登録番号にも対応。">
+    <meta property="og:title" content="内装見積書・請求書アプリ｜一人親方の見積作成">
+    <meta property="og:description" content="スマホで見積書と請求書を作成してPDFで送れます。品目テンプレート90項目、作成件数は無制限。">
+    <meta property="og:type" content="website">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; color: #1a1a1a; background: #fff; }
+        body { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; color: #1a1a1a; background: #fff; line-height: 1.6; }
         header { background: #2563eb; color: #fff; padding: 48px 24px; text-align: center; }
-        header h1 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-        header p { font-size: 16px; opacity: 0.9; line-height: 1.6; }
-        .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 14px; font-size: 13px; margin-top: 12px; }
+        header h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; }
+        header p { font-size: 16px; opacity: 0.92; }
+        .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 14px; font-size: 13px; margin-top: 14px; }
+        .header-cta { margin-top: 24px; }
         section { padding: 48px 24px; max-width: 640px; margin: 0 auto; }
         h2 { font-size: 20px; font-weight: 700; margin-bottom: 20px; color: #1e40af; }
         .features { display: grid; gap: 16px; }
         .feature { background: #f0f7ff; border-radius: 12px; padding: 20px; }
         .feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
-        .feature p { font-size: 14px; color: #444; line-height: 1.6; }
+        .feature p { font-size: 14px; color: #444; }
         .cta { background: #eff6ff; border-radius: 16px; padding: 32px 24px; text-align: center; }
-        .cta p { font-size: 15px; color: #444; margin-bottom: 20px; line-height: 1.7; }
+        .cta p { font-size: 15px; color: #444; margin-bottom: 20px; }
         .btn { display: inline-block; background: #2563eb; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 700; }
+        header .btn { background: #fff; color: #2563eb; }
         .btn-outline { display: inline-block; background: transparent; color: #2563eb; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; border: 2px solid #2563eb; margin-top: 12px; }
         .screenshots { padding: 48px 0; background: #f8faff; }
         .screenshots-title { max-width: 640px; margin: 0 auto; padding: 0 24px 0; }
@@ -29,6 +35,19 @@
         .screenshot-item { flex: 0 0 auto; scroll-snap-align: start; }
         .screenshot-item img { width: 180px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: block; }
         .screenshot-item p { font-size: 12px; color: #666; text-align: center; margin-top: 8px; }
+        .plans { display: grid; gap: 16px; }
+        .plan { border: 1px solid #dbeafe; border-radius: 12px; padding: 20px; }
+        .plan.pro { border-color: #2563eb; background: #f8faff; }
+        .plan h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+        .plan .price { font-size: 14px; color: #1e40af; font-weight: 700; margin-bottom: 10px; }
+        .plan ul { list-style: none; }
+        .plan li { font-size: 14px; color: #444; padding-left: 18px; position: relative; margin-bottom: 6px; }
+        .plan li::before { content: "―"; position: absolute; left: 0; color: #93c5fd; }
+        .note { font-size: 13px; color: #666; margin-top: 16px; }
+        .links { background: #fafafa; }
+        .links ul { list-style: none; }
+        .links li { margin-bottom: 10px; font-size: 14px; }
+        .links a { color: #2563eb; }
         footer { text-align: center; padding: 24px; font-size: 13px; color: #888; border-top: 1px solid #eee; }
         footer a { color: #2563eb; text-decoration: none; }
     </style>
@@ -36,25 +55,28 @@
 <body>
 
 <header>
-    <h1>内装見積もりアプリ</h1>
-    <p>材料費・工賃をその場で計算<br>PDF見積書をすぐに送付</p>
-    <span class="badge">Android 対応</span>
+    <h1>内装見積書・請求書アプリ</h1>
+    <p>スマホで見積書と請求書をつくって<br>そのままPDFで送れます</p>
+    <span class="badge">Android 対応／Google Play で公開中</span>
+    <div class="header-cta">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.interior.estimate">Google Play で入手</a>
+    </div>
 </header>
 
 <section>
     <h2>こんな方におすすめ</h2>
     <div class="features">
         <div class="feature">
-            <h3>内装業者・リフォーム会社</h3>
-            <p>現場でその場で見積もりを作成。床・壁・天井など部位ごとに材料費と工賃を入力するだけで合計が出ます。</p>
+            <h3>内装・リフォームの一人親方</h3>
+            <p>床・壁天井・解体撤去など、内装工事の品目テンプレート90項目から選んで数量を入れるだけ。現場で見積書が作れます。</p>
         </div>
         <div class="feature">
-            <h3>見積書のPDF出力</h3>
-            <p>作成した見積もりをPDFで書き出し、メールやLINEでお客様にすぐ送付できます。</p>
+            <h3>見積書も請求書もPDFで</h3>
+            <p>作成した書類はPDFとして保存され、メールやLINEでそのまま送れます。請求書には請求日・支払期限・振込先が入ります。</p>
         </div>
         <div class="feature">
-            <h3>顧客管理</h3>
-            <p>顧客情報を登録しておけば、次回以降の見積もり作成がさらにスムーズになります。</p>
+            <h3>インボイスに対応</h3>
+            <p>適格請求書の登録番号を登録しておけば、書類に反映されます。顧客情報も保存でき、次回からワンタップで呼び出せます。</p>
         </div>
     </div>
 </section>
@@ -84,13 +106,48 @@
 </div>
 
 <section>
+    <h2>料金</h2>
+    <div class="plans">
+        <div class="plan">
+            <h3>無料版</h3>
+            <div class="price">0円</div>
+            <ul>
+                <li>見積書・請求書の作成件数は無制限</li>
+                <li>品目テンプレート42項目（床・壁天井・解体撤去）</li>
+                <li>PDF出力・共有、顧客情報の保存</li>
+                <li>出力したPDFには透かしが入ります</li>
+            </ul>
+        </div>
+        <div class="plan pro">
+            <h3>Pro版</h3>
+            <div class="price">月額490円／買い切り4,900円</div>
+            <ul>
+                <li>PDFの透かしが消えます</li>
+                <li>自社ロゴを書類に入れられます</li>
+                <li>品目テンプレート90項目すべて（キッチン・トイレ・バス・設備工事・造作工事が追加）</li>
+                <li>見積書をワンタップで請求書に変換できます</li>
+            </ul>
+        </div>
+    </div>
+    <p class="note">サブスクリプションはいつでも解約できます。買い切りは一度の支払いで継続して使えます。</p>
+</section>
+
+<section>
     <div class="cta">
-        <h2>テスター募集中</h2>
-        <p>現在、Google Playの正式公開に向けてテスターを募集しています。<br>インストールするだけでOKです（実際の使用は不要）。</p>
-        <a class="btn" href="https://play.google.com/apps/testing/com.interior.estimate">テスターとして参加する</a>
+        <h2>ダウンロード</h2>
+        <p>データはすべて端末内に保存され、外部サーバーへの送信はありません。</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.interior.estimate">Google Play で入手</a>
         <br>
         <a class="btn-outline" href="mailto:harukitoblog1@gmail.com">お問い合わせ</a>
     </div>
+</section>
+
+<section class="links">
+    <h2>関連</h2>
+    <ul>
+        <li><a href="https://yasutoworks-blip.github.io/building-inspection-app/">建物点検報告アプリ</a>｜清掃・設備点検の報告書をスマホで作る</li>
+        <li><a href="https://yasutoworks-blip.github.io/hp-design-gallery/">職人・工事業向けホームページデザイン見本帳</a>｜内装・塗装・電気工事などのHP見本</li>
+    </ul>
 </section>
 
 <footer>
