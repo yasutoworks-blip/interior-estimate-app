@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>諸経費の計算方法｜積み上げと率の2通り、自分の率の出し方｜内装・リフォーム</title>
+<meta name="description" content="工事見積書の諸経費の計算方法を、国土交通省の共通費積算基準が認めている「積み上げ」と「率」の2通りに分けて整理しました。過去の現場から自分の率を出す手順と計算例、処分費を率から外す扱いまで。">
+<link rel="canonical" href="https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-keisan/">
+<meta property="og:title" content="諸経費の計算方法｜積み上げと率の2通り、自分の率の出し方｜内装・リフォーム">
+<meta property="og:description" content="諸経費は積み上げるか、率で出すか。公共工事の基準の考え方を下敷きに、過去の現場から自分の率を出す手順を計算例つきで整理しました。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-keisan/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "諸経費の計算方法｜積み上げと率の2通り、自分の率の出し方｜内装・リフォーム",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "author": { "@type": "Organization", "name": "yasutoworks" },
+  "mainEntityOfPage": "https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-keisan/"
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Hiragino Sans','Noto Sans JP',sans-serif; color:#1a1a1a; background:#fff; line-height:1.85; }
+.topbar { background:#2563eb; color:#fff; padding:14px 24px; font-size:14px; }
+.topbar a { color:#fff; text-decoration:none; }
+article { max-width:680px; margin:0 auto; padding:40px 24px 24px; }
+h1 { font-size:26px; line-height:1.5; margin-bottom:12px; font-weight:700; }
+.meta { font-size:13px; color:#777; margin-bottom:32px; padding-bottom:20px; border-bottom:1px solid #eee; }
+h2 { font-size:20px; margin:40px 0 16px; padding-left:12px; border-left:4px solid #2563eb; font-weight:700; }
+h3 { font-size:16px; margin:28px 0 10px; font-weight:700; }
+p { margin-bottom:16px; }
+ol, ul { margin:0 0 20px 22px; }
+li { margin-bottom:8px; }
+.box { background:#f0f7ff; border-radius:10px; padding:20px 22px; margin:24px 0; }
+.box p:last-child { margin-bottom:0; }
+.box h3 { margin-top:0; }
+table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; }
+th, td { border:1px solid #dbeafe; padding:10px 12px; text-align:left; vertical-align:top; }
+th { background:#f0f7ff; font-weight:700; }
+td.num { text-align:right; white-space:nowrap; }
+.scroll { overflow-x:auto; }
+.appbox { border:2px solid #2563eb; border-radius:12px; padding:24px; margin:36px 0; }
+.appbox h3 { margin-top:0; color:#1e40af; }
+.btn { display:inline-block; background:#2563eb; color:#fff; text-decoration:none; padding:13px 28px; border-radius:8px; font-weight:700; font-size:15px; margin-top:8px; }
+.sources { font-size:13px; color:#555; background:#fafafa; border-radius:10px; padding:20px 22px; margin-top:40px; }
+.sources h2 { font-size:15px; border:none; padding:0; margin:0 0 12px; }
+.sources ul { margin-left:20px; }
+.sources a { color:#2563eb; }
+footer { text-align:center; padding:28px 24px; font-size:13px; color:#888; border-top:1px solid #eee; margin-top:32px; }
+footer a { color:#2563eb; text-decoration:none; margin:0 8px; }
+</style>
+</head>
+<body>
+
+<div class="topbar"><a href="../../">内装見積書・請求書アプリ</a></div>
+
+<article>
+<h1>諸経費の計算方法｜積み上げと率の2通り、自分の率の出し方｜内装・リフォーム</h1>
+<div class="meta">公開：2026年10月31日</div>
+
+<p>見積書の諸経費を、毎回なんとなく「工事費の1割」で入れている。その1割がどこから来たのか、自分でも説明できない。この記事は、そういう状態から抜け出すための整理です。</p>
+
+<div class="box">
+<h3>諸経費の計算方法（先に結論）</h3>
+<p>諸経費の出し方は<strong>「積み上げ」と「率」の2通り</strong>です。その現場でかかる費用を書き出して足すのが積み上げ、過去の実績から出した割合を工事費に掛けるのが率です。公共工事の積算基準も、この2つを使い分けて算定しています。</p>
+<p>率で出す場合は、<strong>ネットで見かけた数字ではなく、自分の過去の現場から出した率</strong>を使います。その手順を下で計算例つきで説明します。</p>
+</div>
+
+<p>そもそも諸経費に何が入るのかは、別の記事（<a href="../shokeihi/">諸経費とは？工事見積書の内訳例と書き方</a>）で整理しています。この記事は「いくらにするか」の出し方に絞ります。</p>
+
+<h2>方法1：積み上げで出す</h2>
+
+<p>その現場のためにかかる費用を、品目に紐づかないものも含めて書き出し、金額を足していく方法です。</p>
+
+<div class="scroll">
+<table>
+<tr><th>書き出す費用の例</th><th>金額の出し方</th></tr>
+<tr><td>養生材</td><td>使う量×単価（実費）</td></tr>
+<tr><td>廃材の処分</td><td>処分場の料金＋運搬の往復（実費）</td></tr>
+<tr><td>駐車場代</td><td>1日あたり×日数（実費）</td></tr>
+<tr><td>現場までの移動</td><td>往復の距離から出したガソリン代・高速代×日数</td></tr>
+<tr><td>打ち合わせ・近隣挨拶・報告書</td><td>かかる時間×自分の時間単価</td></tr>
+</table>
+</div>
+
+<p>時間単価がまだ決まっていない場合は、<strong>1年で確保したい自分の収入を、1年で現場に出られる時間で割る</strong>と目安が出ます。保険や車両などの会社の経費は、このあと説明する「会社の経費率」で回収するので、時間単価には入れません（両方に入れると二重取りになります）。</p>
+
+<p>手間はかかりますが、<strong>金額の根拠がそのまま見積書に書ける</strong>のが強みです。施主に「この諸経費は何ですか」と聞かれても、表を見せれば答えになります。</p>
+
+<p>ただし、保険・車両・通信費・事務の手間のような<strong>会社を維持するための費用</strong>は、1つの現場にいくらと積み上げることができません。ここは次の「率」で出すしかありません。</p>
+
+<h2>方法2：自分の率を出す</h2>
+
+<p>率で出すときに大事なのは、<strong>現場の経費と会社の経費を分けて、それぞれの率を出す</strong>ことです。国の公共工事の基準も、現場の費用と会社の費用で別々の率を使っています。</p>
+
+<h3>手順1：現場の経費率を出す</h3>
+<ol>
+<li>終わった現場を数件選ぶ（できれば規模が似たもの）</li>
+<li>それぞれの現場で、材料と手間以外にかかった支出を足す（養生材、ガソリン、消耗品など）。<strong>廃材の処分費や駐車場代のように、見積書で別の行にして実費を請求しているものは除きます</strong>（率にも入れると二重に取ることになります）</li>
+<li>その合計を、同じ現場の直接工事費（材料費と手間の合計）の合計で割る</li>
+</ol>
+<p>現場ごとに支出を分けて記録していなくても大丈夫です。<strong>レシートや通帳、カードの明細を日付で拾い、その日に入っていた現場に振り分ける</strong>だけで、おおよその数字は出せます。これから先の現場は、レシートの裏に現場名を書いておくと次から楽になります。</p>
+<p>なお、打ち合わせや報告書づくりのように<strong>時間でかかるものは、レシートに出てこないので、この率には入りません。</strong>方法1のように時間×時間単価で別に積み上げるか、品目の手間の単価に含めておきます。</p>
+
+<h3>手順2：会社の経費率を出す</h3>
+<ol>
+<li>1年分の、特定の現場に紐づかない経費を足す（保険、車両の維持費、通信費、事務用品、会計ソフトなど）</li>
+<li>その合計を、同じ年の工事の<strong>材料費・手間・現場の経費の合計</strong>で割る</li>
+</ol>
+<p>割る数を売上にしないのは、この率を掛ける相手が「直接工事費＋現場の経費」だからです。売上には諸経費や利益も入っているので、売上で割ると率が低めに出て、会社の経費を回収しきれなくなります。どうしても内訳がわからなければ売上で割っても構いませんが、その場合は率が少し低めに出ていると考えてください。</p>
+
+<h3>計算例（数字は説明用の架空のものです）</h3>
+
+<div class="scroll">
+<table>
+<tr><th>項目</th><th>数字</th><th>計算</th></tr>
+<tr><td>過去5現場の直接工事費の合計</td><td class="num">400万円</td><td></td></tr>
+<tr><td>同じ5現場でかかった現場の経費</td><td class="num">36万円</td><td>36÷400＝<strong>現場の経費率 9%</strong></td></tr>
+<tr><td>1年分の会社の経費</td><td class="num">120万円</td><td></td></tr>
+<tr><td>同じ年の材料費・手間・現場の経費の合計</td><td class="num">1,200万円</td><td>120÷1,200＝<strong>会社の経費率 10%</strong></td></tr>
+</table>
+</div>
+
+<p>この率で、直接工事費50万円の現場の諸経費を出すと次のようになります。</p>
+
+<div class="scroll">
+<table>
+<tr><th>直接工事費</th><td class="num">500,000円</td></tr>
+<tr><th>現場の経費（×9%）</th><td class="num">45,000円</td></tr>
+<tr><th>小計</th><td class="num">545,000円</td></tr>
+<tr><th>会社の経費（小計×10%）</th><td class="num">54,500円</td></tr>
+<tr><th>諸経費の合計</th><td class="num"><strong>99,500円</strong><br>（直接工事費の約19.9%）</td></tr>
+</table>
+</div>
+
+<p>処分費や駐車場代を別の行にする現場では、<strong>この99,500円とは別に、その実費を足します。</strong>率で出した諸経費だけで見積書を締めてしまうと、別の行にするはずだった費用を請求し忘れます。</p>
+
+<p>会社の経費を「直接工事費」ではなく「直接工事費＋現場の経費」に掛けているのは、公共工事の基準が一般管理費等を工事原価（直接工事費に共通仮設費と現場管理費を足したもの）に掛けているのにならったものです。手順2で率を出したときの割る数と、ここで掛ける相手を<strong>同じ範囲にそろえておく</strong>ことが大事です。</p>
+
+<h3>利益をどこに入れるかを決めておく</h3>
+<p>上の計算には利益が入っていません。公共工事の基準では、一般管理費等の中に「付加利益等」（法人税や内部留保など）が含まれています。民間の見積書では、<strong>利益を品目の単価に入れるのか、諸経費に入れるのか</strong>を自分で決めておく必要があります。決めないまま率を足すと、二重に乗せたり、逆にどこにも入っていなかったりします。</p>
+
+<h2>公共工事の基準も「積み上げか、率か」</h2>
+
+<p>ここまでの考え方は、公共工事の基準と同じです。国土交通省の公共建築工事共通費積算基準（令和8年改定）は、諸経費にあたる費用を<strong>積み上げるか、過去の実績に基づく率で出す</strong>と定めていて（会社を維持する費用にあたる一般管理費等は率のみ）、率に含まれない費用は「必要に応じ別途積み上げにより算定して加算する」としています。民間の見積書にこの基準が適用されるわけではありませんが、<strong>率で出して、率に入らないものだけ積み上げて足す</strong>という考え方はそのまま使えます。</p>
+
+<h2>処分費は率に混ぜない</h2>
+
+<p>公共工事の基準には、共通仮設費率や現場管理費率を計算するときの工事費に<strong>処分費を含まない</strong>という定めがあります。率を掛ける相手から、処分費だけは外すということです。</p>
+
+<p>民間の見積書でも同じで、<strong>廃材の処分費のように実費がはっきりしていて振れ幅の大きいものは、率で出さずに積み上げて別行にする</strong>ほうが、金額も説明も安定します。すぐ上で書いた「率で出して、率に入らないものだけ積み上げて足す」の典型例です。</p>
+
+<h2>率は年に1回見直す</h2>
+
+<p>車両を買い替えた、保険を変えた、遠方の現場が増えた。こうした変化で率は変わります。<strong>確定申告の数字がそろったタイミングで、会社の経費率だけでも出し直す</strong>と、実態とずれにくくなります。</p>
+
+<h2>まとめ：諸経費の組み立て方</h2>
+
+<p>積み上げだけで出すなら、方法1の表のとおり全部を書き出します。下は、率と組み合わせて出す場合のまとめです。</p>
+
+<div class="scroll">
+<table>
+<tr><th>費用の種類</th><th>例</th><th>見積書での出し方</th></tr>
+<tr><td>実費がはっきりしていて現場ごとに大きく変わるもの</td><td>廃材の処分費、駐車場代</td><td>積み上げて別の行（実費）</td></tr>
+<tr><td>細かい現場の経費</td><td>養生材、ガソリン、消耗品</td><td>現場の経費率（直接工事費に掛ける）</td></tr>
+<tr><td>時間でかかるもの</td><td>打ち合わせ、近隣挨拶、報告書</td><td>時間×時間単価で積み上げるか、手間の単価に含める</td></tr>
+<tr><td>会社を維持する費用</td><td>保険、車両、通信費、事務用品</td><td>会社の経費率（直接工事費＋現場の経費に掛ける）</td></tr>
+<tr><td>利益</td><td>―</td><td>品目の単価に入れるか、諸経費に入れるかを決めて、どちらか一方だけに入れる</td></tr>
+</table>
+</div>
+
+<p>どの費用も<strong>どこか1か所にだけ入っている</strong>状態になっていれば、取りこぼしも二重取りも起きません。</p>
+
+<p>なお、ネット上で見かける「諸経費は工事費の○%」という相場の数字との付き合い方は、<a href="../shokeihi-soba/">諸経費の相場は何%？</a>で、公共工事の率を実際に計算しながら整理しています。</p>
+
+<div class="appbox">
+<h3>出した率を、毎回同じ形で見積書に入れる</h3>
+<p>「内装見積書・請求書アプリ」は、現場で見積書と請求書を作るために作ったAndroidアプリです。品目テンプレートから選んで数量を入れると合計が出るので、諸経費の行を毎回同じ形で入れられます。</p>
+<ul>
+<li>内装工事の品目テンプレート90項目（無料版では床・壁天井・解体撤去の42項目が使えます）</li>
+<li>顧客情報は一度登録すればワンタップで呼び出せます</li>
+<li>作成した書類はPDFとして保存され、メールやLINEで送れます</li>
+</ul>
+<p>作成件数に制限はなく、無料のまま使えます（無料版で出力したPDFには透かしが入ります）。透かしを消す、自社ロゴを入れる、見積書を請求書に変換する、といった機能はPro版（月額490円／買い切り4,900円）です。</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.interior.estimate">Google Play で見る</a>
+</div>
+
+<div class="sources">
+<h2>出典</h2>
+<ul>
+<li><a href="https://www.mlit.go.jp/gobuild/content/001733141.pdf">公共建築工事共通費積算基準（令和8年改定）（PDF）｜国土交通省</a>（共通費の区分、積み上げと比率による算定、処分費を含まない定め、表－4 付加利益等）</li>
+<li><a href="https://www.mlit.go.jp/common/001184223.pdf">公共建築工事の工事費積算における共通費の算定方法及び算定例（PDF）｜国土交通省</a>（率で算定し、率に含まれない内容を積み上げて加算する考え方）</li>
+<li><a href="https://www.mlit.go.jp/common/001157928.pdf">公共建築工事積算基準（PDF）｜国土交通省</a>（工事費の構成）</li>
+</ul>
+<p style="margin-top:12px;">この記事は2026年10月時点で確認した内容をまとめたものです。公共建築工事共通費積算基準は国の官庁営繕工事のための基準で、民間工事の見積に適用が義務づけられるものではありません。計算例の数字は説明のための架空のものです。自社の率の設定や税務上の扱いについては、税理士などの専門家に確認してください。</p>
+</div>
+
+<div class="box">
+<h3>あわせて読む</h3>
+<ul style="margin-bottom:0;">
+<li><a href="../shokeihi/">諸経費とは？工事見積書の内訳例と書き方</a></li>
+<li><a href="../shokeihi-soba/">諸経費の相場は何%？公共工事の率を計算してわかること</a></li>
+<li><a href="../shokeihi-kotsuhi/">諸経費に交通費・駐車場代は入れていい？見積書での扱い方</a></li>
+</ul>
+</div>
+
+</article>
+
+<footer>
+<a href="../">記事一覧</a>｜<a href="../../">アプリのページ</a>｜<a href="../../privacy-policy.html">プライバシーポリシー</a>
+</footer>
+
+</body>
+</html>

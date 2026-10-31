@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>諸経費の相場は何%？公共工事の率を計算してわかること｜内装・リフォーム</title>
+<meta name="description" content="工事見積書の諸経費の相場を、国土交通省の公共建築工事共通費積算基準（令和8年改定）の式で実際に計算しました。改修工事300万円規模での率と、その数字を民間の見積書とそのまま比べられない理由、相場の数字を見るときに確かめる3点まで。">
+<link rel="canonical" href="https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-soba/">
+<meta property="og:title" content="諸経費の相場は何%？公共工事の率を計算してわかること">
+<meta property="og:description" content="公共工事の共通費の式で、改修工事の諸経費率を規模別に計算しました。相場の数字を自分の見積書と比べるときの注意点も。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-soba/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "諸経費の相場は何%？公共工事の率を計算してわかること｜内装・リフォーム",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "author": { "@type": "Organization", "name": "yasutoworks" },
+  "mainEntityOfPage": "https://yasutoworks-blip.github.io/interior-estimate-app/articles/shokeihi-soba/"
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Hiragino Sans','Noto Sans JP',sans-serif; color:#1a1a1a; background:#fff; line-height:1.85; }
+.topbar { background:#2563eb; color:#fff; padding:14px 24px; font-size:14px; }
+.topbar a { color:#fff; text-decoration:none; }
+article { max-width:680px; margin:0 auto; padding:40px 24px 24px; }
+h1 { font-size:26px; line-height:1.5; margin-bottom:12px; font-weight:700; }
+.meta { font-size:13px; color:#777; margin-bottom:32px; padding-bottom:20px; border-bottom:1px solid #eee; }
+h2 { font-size:20px; margin:40px 0 16px; padding-left:12px; border-left:4px solid #2563eb; font-weight:700; }
+h3 { font-size:16px; margin:28px 0 10px; font-weight:700; }
+p { margin-bottom:16px; }
+ol, ul { margin:0 0 20px 22px; }
+li { margin-bottom:8px; }
+.box { background:#f0f7ff; border-radius:10px; padding:20px 22px; margin:24px 0; }
+.box p:last-child { margin-bottom:0; }
+.box h3 { margin-top:0; }
+table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; }
+th, td { border:1px solid #dbeafe; padding:10px 12px; text-align:left; vertical-align:top; }
+th { background:#f0f7ff; font-weight:700; }
+td.num { text-align:right; white-space:nowrap; }
+.note { font-size:13px; color:#555; }
+.scroll { overflow-x:auto; }
+.appbox { border:2px solid #2563eb; border-radius:12px; padding:24px; margin:36px 0; }
+.appbox h3 { margin-top:0; color:#1e40af; }
+.btn { display:inline-block; background:#2563eb; color:#fff; text-decoration:none; padding:13px 28px; border-radius:8px; font-weight:700; font-size:15px; margin-top:8px; }
+.sources { font-size:13px; color:#555; background:#fafafa; border-radius:10px; padding:20px 22px; margin-top:40px; }
+.sources h2 { font-size:15px; border:none; padding:0; margin:0 0 12px; }
+.sources ul { margin-left:20px; }
+.sources a { color:#2563eb; }
+footer { text-align:center; padding:28px 24px; font-size:13px; color:#888; border-top:1px solid #eee; margin-top:32px; }
+footer a { color:#2563eb; text-decoration:none; margin:0 8px; }
+</style>
+</head>
+<body>
+
+<div class="topbar"><a href="../../">内装見積書・請求書アプリ</a></div>
+
+<article>
+<h1>諸経費の相場は何%？公共工事の率を計算してわかること｜内装・リフォーム</h1>
+<div class="meta">公開：2026年10月31日</div>
+
+<p class="note">この記事は、見積書を作る側（内装・リフォームの職人さん・工務店）に向けて書いています。</p>
+
+<p>「諸経費 相場」で調べると、「工事費の○%」という数字がいくつも出てきます。ただ、その数字に何が含まれているのかまで書かれていることは多くありません。何が入った率なのかがわからないと、自分の見積書と比べようがありません。</p>
+
+<p>そこでこの記事では、中身が公開されている「率」である、<strong>国の公共建築工事の共通費の式</strong>を実際に計算してみます。</p>
+
+<div class="box">
+<h3>諸経費の相場（先に結論）</h3>
+<p><strong>民間工事の諸経費に、決まった相場はありません。</strong>何を諸経費に入れるかが会社ごとに違うからです。</p>
+<p>参考として、国の公共建築工事の式で改修工事を計算すると、直接工事費（材料費や手間など、工事そのものにかかる費用）300万円・工期1か月で、共通費（民間でいう諸経費）は直接工事費の約44%になります。<strong>ただしこの率には、元請の利益、現場事務所や現場の社員の給料まで入っています。</strong>「諸経費は4割が普通」という意味ではなく、民間の見積書とそのまま比べられる数字ではありません。</p>
+</div>
+
+<h2>公共工事の諸経費の率は式で計算する</h2>
+
+<p>国土交通省の公共建築工事共通費積算基準（令和8年改定）では、民間の見積書でいう諸経費にあたる「共通費」を3つに分け、それぞれの率を式で計算します。</p>
+
+<div class="scroll">
+<table>
+<tr><th>区分</th><th>何に対する率か</th><th>中身の例（基準の表から抜粋）</th></tr>
+<tr><td>共通仮設費</td><td>直接工事費</td><td>現場事務所・倉庫、隣接物等の養生、工事用の電気・水道料金、跡片付けと発生材処分</td></tr>
+<tr><td>現場管理費</td><td>純工事費<br>（直接工事費＋共通仮設費）</td><td>現場の社員の給料、保険料、法定福利費、事務用品、工事写真代、通信交通費</td></tr>
+<tr><td>一般管理費等</td><td>工事原価<br>（純工事費＋現場管理費）</td><td>本店・支店の給料や家賃、広告宣伝費などの一般管理費と、法人税・株主配当・内部留保などの付加利益等</td></tr>
+</table>
+</div>
+
+<p>共通仮設費率と現場管理費率は、<strong>工事の規模（金額）と工期</strong>から計算します。基準の式では、<strong>規模が小さいほど率は高く、工期が長いほど率は高く</strong>なります。一般管理費等率は工事原価だけで決まり、工事原価が300万円以下なら20.11%の固定値です。</p>
+
+<h2>改修工事の率を規模別に計算してみた</h2>
+
+<p>改修建築工事の式（基準の別表－2・別表－9・別表－15）を使い、基準の端数処理（率は小数点以下第3位を四捨五入）に従って計算しました。改修建築工事の式は、直接工事費300万円から10億円の範囲を想定しています。</p>
+
+<table>
+<tr><th>直接工事費<br>・工期</th><th>共通費の合計<br>（直接工事費に対して）</th></tr>
+<tr><td>300万円・1か月</td><td><strong>約44%</strong>（約133万円）</td></tr>
+<tr><td>500万円・1.5か月</td><td><strong>約44%</strong>（約222万円）</td></tr>
+<tr><td>1,000万円・2か月</td><td><strong>約40%</strong>（約401万円）</td></tr>
+<tr><td>3,000万円・3か月</td><td><strong>約33%</strong>（約1,001万円）</td></tr>
+</table>
+<p class="note">たとえば300万円の行の内訳は、共通仮設費率4.22%、現場管理費率15.63%、一般管理費等率19.82%です。各率は前の段階の金額に掛けるので（現場管理費率は純工事費に、一般管理費等率は工事原価に）、合計は3つの率の単純な足し算にはなりません。一般管理費等率が20.11%の固定値になっていないのは、共通仮設費と現場管理費を足した工事原価が約362万円になり、300万円を超えるためです。</p>
+<p class="note">工期は説明のために置いた仮の値です。300万円と500万円が同じ約44%なのは、500万円のほうの工期を長く置いたためで、工期が同じなら規模が小さいほうが率は高くなります。計算方法は国土交通省の算定例（新営工事・直接工事費約1.66億円）で検算し、同じ結果になることを確かめています。</p>
+
+<p>思っていたより高い、と感じた方が多いと思います。ここから先が大事なところです。</p>
+
+<h2>この数字をそのまま比べてはいけない理由</h2>
+
+<h3>1. 利益が入っている</h3>
+<p>一般管理費等には「付加利益等」が含まれます。基準の表－4には、法人税、株主配当金、内部留保金などが並んでいます。<strong>民間の見積書で利益を品目の単価に入れている場合、諸経費の率はそのぶん低くなって当然</strong>です。</p>
+
+<h3>2. 元請として現場を構える前提</h3>
+<p>共通仮設費には現場事務所や倉庫、現場管理費には現場の社員の給料や法定福利費が入っています。<strong>一人親方が自分で手を動かす現場とは、費用の構造が違います。</strong>自分の手間を品目の単価で取っているなら、その分は諸経費に入らないはずです。</p>
+
+<h3>3. 処分費が率の外にある</h3>
+<p>基準では、共通仮設費率と現場管理費率を計算するときの工事費に処分費を含めません。処分費の扱いが違えば、率も変わります。</p>
+
+<p>つまり公共工事の率からわかるのは「相場は○%」ではなく、<strong>何を入れるかで率は大きく変わる</strong>ということです。そして、<strong>規模が小さい工事ほど率が高くなるのは公共工事の式でも同じ</strong>だということです。小さな工事で諸経費の率が高めになるのは、それ自体はおかしなことではありません。</p>
+
+<h2>「相場○%」を見るときに確かめる3つのこと</h2>
+
+<ol>
+<li><strong>何に対する率か</strong>：直接工事費に対してか、総額に対してか。同じ10%でも、掛ける相手で金額が変わります</li>
+<li><strong>利益が入っているか</strong>：利益込みの率と、経費だけの率は比べられません</li>
+<li><strong>処分費・運搬費・駐車場代などの実費が入っているか</strong>：別行にしている会社の率は低く見えます</li>
+</ol>
+
+<p>この3つがわからない数字は、参考にとどめるのが安全です。結局のところ、いちばん確かなのは<strong>自分の過去の現場から出した率</strong>です。出し方は<a href="../shokeihi-keisan/">諸経費の計算方法</a>で、計算例つきで説明しています。</p>
+
+<h2>施主に「諸経費が高い」と言われたら</h2>
+
+<p>率の高さを率で言い返しても、話はかみ合いません。<strong>中身を見せる</strong>ほうが伝わります。養生、廃材の処分、駐車場、移動、打ち合わせ。それぞれにいくらかかるかを行に分けて見せれば、「高い」ではなく「どれを減らせるか」の話に変わります。行の分け方は<a href="../shokeihi/">諸経費とは？工事見積書の内訳例と書き方</a>にまとめています。</p>
+
+<div class="appbox">
+<h3>諸経費の行を、毎回同じ形で入れる</h3>
+<p>「内装見積書・請求書アプリ」は、現場で見積書と請求書を作るために作ったAndroidアプリです。品目テンプレートから選んで数量を入れると合計が出るので、諸経費の行を毎回同じ形で入れられます。</p>
+<ul>
+<li>内装工事の品目テンプレート90項目（無料版では床・壁天井・解体撤去の42項目が使えます）</li>
+<li>顧客情報は一度登録すればワンタップで呼び出せます</li>
+<li>作成した書類はPDFとして保存され、メールやLINEで送れます</li>
+</ul>
+<p>作成件数に制限はなく、無料のまま使えます（無料版で出力したPDFには透かしが入ります）。透かしを消す、自社ロゴを入れる、見積書を請求書に変換する、といった機能はPro版（月額490円／買い切り4,900円）です。</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.interior.estimate">Google Play で見る</a>
+</div>
+
+<div class="sources">
+<h2>出典</h2>
+<ul>
+<li><a href="https://www.mlit.go.jp/gobuild/content/001733141.pdf">公共建築工事共通費積算基準（令和8年改定）（PDF）｜国土交通省</a>（表－1〜表－4の内容、処分費を含まない定め、別表－2・別表－9の式と適用範囲、別表－15の一般管理費等率）</li>
+<li><a href="https://www.mlit.go.jp/gobuild/content/001599462.pdf">「公共建築工事共通費積算基準」における共通費の算定について（PDF）｜国土交通省</a>（算定式の計算方法）</li>
+<li><a href="https://www.mlit.go.jp/common/001184223.pdf">公共建築工事の工事費積算における共通費の算定方法及び算定例（PDF）｜国土交通省</a>（検算に使った算定例）</li>
+</ul>
+<p style="margin-top:12px;">この記事は2026年10月時点で確認した内容をまとめたものです。表の率は、公共建築工事共通費積算基準の式に記事中の条件を当てはめて当サイトが計算したもので、国土交通省が公表している数値ではありません。この基準は国の官庁営繕工事のための基準で、施工場所が一般的な市街地の場合の率です。民間工事の見積に適用が義務づけられるものではなく、民間工事の諸経費の相場を示すものでもありません。</p>
+</div>
+
+<div class="box">
+<h3>あわせて読む</h3>
+<ul style="margin-bottom:0;">
+<li><a href="../shokeihi/">諸経費とは？工事見積書の内訳例と書き方</a></li>
+<li><a href="../shokeihi-keisan/">諸経費の計算方法｜積み上げと率の2通り、自分の率の出し方</a></li>
+<li><a href="../shokeihi-kotsuhi/">諸経費に交通費・駐車場代は入れていい？見積書での扱い方</a></li>
+</ul>
+</div>
+
+</article>
+
+<footer>
+<a href="../">記事一覧</a>｜<a href="../../">アプリのページ</a>｜<a href="../../privacy-policy.html">プライバシーポリシー</a>
+</footer>
+
+</body>
+</html>
